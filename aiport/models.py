@@ -34,13 +34,13 @@ class Flight:
         self.destination = destination
         self.departure = departure
         self.capacity = capacity
-        self._assigned_seats = [list]
+        self._assigned_seats: list[int] = []
         self._boarding_passes = _boarding_passes
 
     def available_seats(self) -> int:
         return self.capacity - len(self._assigned_seats)
 
-    def is_full(self):
+    def is_full(self) -> bool:
         return self.available_seats() <= 0
 
     def assign_seat(self):
