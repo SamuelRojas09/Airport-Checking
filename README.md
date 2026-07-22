@@ -107,7 +107,7 @@ classDiagram
     CheckInCounter "1" --> "1" Flight : operates on
     CheckInCounter "1" --> "1" CheckInQueue : reads from
 ```
-    ## Tecnologias y Conceptos Aplicados
+## Tecnologias y Conceptos Aplicados
 
 - **Lenguaje:** Python 3.10+
 - **Encapsulamiento:** Atributos privados (`__document_id`) y protegidos (`_assigned_seats`, `_boarding_passes`) para seguridad de datos.
